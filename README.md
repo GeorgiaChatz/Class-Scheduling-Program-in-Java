@@ -12,24 +12,18 @@ try another value.
 
 **_Pseudocode of BackTracking_**
 
-1. procedure BacktrackingSearch(csp)
- 2. return RecursiveBacktracking({}, csp)
-3. end procedure
-4. procedure RecursiveBacktracking(assignment, csp)
-5. if assignment is complete then
-6. return assignment
-7. end if
-8. var = SelectUnassignedVariable(assignment, csp)
-9. for each value in OrderDomainValues(var, assignment, csp) do
-10. if value consistent with assignment and Constraints[csp] then
-11. add {var = value} in assignment
-12. result = RecursiveBacktracking(assignment, csp)
-13. if result ̸ = Failure then
-14. return result
-15. end if
-16. remove {var = value} from assignment
-17. end if
-18. end for
-19. return Failure
-20. end procedure
+<img src="fig1.jpg" width="300" align="center"> 
+
+# Implementation 
+
+Since we want to fill hours in the program, each hour for each section for each class will be a separate variable. For example, if we have 5 days, 7 hours each day, 3 classes and 3 segments, 4 have a total of 5 × 7 × 3 × 3 = 315 different variables. Next, we find the domain of each variable. The most natural domain for our variables are the lessons that can be taught at any time (depending on the class). But this is how we ignore the teachers. So the right domain for variables is teacher-class pairs that can be taught / taught at any time (depending on class).Finally ,we set the constraints.
+
+**_Class_Lesson_**: this class will hold the details of each lesson
+**_Class_Teacher**: this class will hold the details of each teacher SlotValue: this class will represent a teacher-lesson pair
+**_Assignment_**: this class will be the status / assignment as defined earlier for the problem
+
+# Run Instractions
+
+Just run from command MainClass.java 
+
 
