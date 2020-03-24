@@ -6,9 +6,7 @@ It is an implementation of a project in Artificial Intelligence course.
 
 # Project Informations
 
-We use an algorithm called backtracking search to solve this CSP problem. It's nothing but DFS (with the slightly different
-implementation we discussed above) where when we find ourselves in a situation that violates some limitation, we go back and
-try another value.
+We use an algorithm called backtracking search to solve this CSP problem. It's nothing but DFS where when we find ourselves in a situation that violates some limitation, we go back and try another value.
 
 **_Pseudocode of BackTracking_**
 
