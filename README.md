@@ -2,7 +2,7 @@
 
 It is an implementation of a project in Artificial Intelligence course.
 - We develop software in **Java**  which build a high school curriculum using state-space search algorithms.
-- This problem belongs to **Constraint Satisfaction Problems**.
+- This problem can be classified into **Constraint Satisfaction Problems**.
 
 # Project Informations
 
