@@ -18,7 +18,7 @@ Since we want to fill hours in the program, each hour for each section for each 
 
 - **_Class_Lesson_**: this class will hold the details of each lesson
 - **_Class_Teacher_**: this class will hold the details of each teacher SlotValue: this class will represent a teacher-lesson pair
-- **_Assignment_**: this class will be the status / assignment as defined earlier for the problem
+- **_Assignment_**: this class will be the status / assignment
 
 # Run Instractions
 
